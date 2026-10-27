@@ -28,6 +28,22 @@ For each continuous clip boundary, compare actual shot text and the ledger:
 
 Each prompt states its own opening state. Never use “same as previous video”, “continue from the last clip”, “opens on the exact final frame of the previous clip”, or similar generation-memory instructions. Intentional scene/time jumps are not continuity failures.
 
+## Review the whole prompt after a state change
+
+Read the actual prompt in event order. For a consequential object or person, establish the opening state, locate the action that changes it, then check the following action shots, speaker poses, set summary and ending. Compare that result with the next opening and the ledger. Two matching ledger entries can carry the same mistake.
+
+Use this review path for each changed state: **header/BG/AL → changing action → subsequent poses/set → ending/next opening**. At each position, establish whether its wording is still valid or needs the smallest replacement. This includes the header even when the action and ending already agree.
+
+Keep architecture and object design in BG/AL definitions; put changing positions, holders, open/closed conditions, costume on/off and restraints in the shot states. When a header states a condition that changes, retain the design and move the changing condition into the relevant shot, or explicitly scope it to the opening. For example, replace a global “frame lying on the desk” with the stable frame design and show its opening placement in shot 1. A minimal repair covers every contradictory occurrence, rather than leaving the header as an unscoped old placement. Search the affected prompt and its continuous neighbours for that condition after revising an action.
+
+| Actual action | Contradiction to catch elsewhere in the same prompt | Minimal repair |
+|---|---|---|
+| The actor lifts the only frame from the floor | Ending pose holds the frame, but copied set text still places it on the floor | Remove the stale floor position; keep one frame with the current holder |
+| A guard binds the suspect's wrists | Character pose says bound while the scene summary still says free by the doorway | Update the old free/location phrase from the restraint action onward |
+| A witness hands over a distinctive object | AL/header fixes it inside its old box while the recipient now holds it | Keep its design in AL; state the empty box and new holder at the relevant shots |
+
+The scope is visible, consequential continuity: track a recognisable prop, custody, accessory or posture change that affects the scene. Ordinary background variation does not require a detailed inventory or extra refs. For a reusable source-to-coverage example, see [worked-sequence.md](worked-sequence.md).
+
 ## Revision scope
 
 Fix the smallest conflicting phrase in the header/action/speaker pose; preserve working structure, dialogue, shot order, edit handles and cast refs. Keep source-to-prompt coverage pragmatic: protect the core dramatic meaning, accept harmless background variation within generation limits. Do not turn an approximate fidelity preference into a mechanically claimed percentage score.

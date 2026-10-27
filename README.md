@@ -60,6 +60,8 @@ Các nguyên tắc chính:
 
 Đọc [pacing-and-lessons.md](skills/sf-board-port/references/pacing-and-lessons.md): tạo nhịp gọn và cuốn từ diễn biến, giữ đối đáp liền mạch, gộp thao tác phụ, đặt phản ứng đúng chỗ, dùng handles khi dựng và chọn camera theo chức năng. Bài học từ 83/169/Millionaire/Furious được chuyển thành cách làm và ví dụ thực tế.
 
+[Ví dụ chuỗi hoàn chỉnh](skills/sf-board-port/references/worked-sequence.md) có nguồn giả lập, phương án coverage và trạng thái qua từng hành động. Phần tự rà kiểm tra cả chỗ tách vụn lẫn clip quá dồn, cùng các câu trạng thái cũ còn sót trong header/shot/set dù ledger đã khớp.
+
 Hướng dẫn chi tiết còn lại: [cấu trúc prompt/CHAR/BG](skills/sf-board-port/references/prompting.md), [prop/AL/continuity](skills/sf-board-port/references/continuity.md), [thumbnail tình huống](skills/sf-board-port/references/thumbnails.md), [schema/đóng gói](skills/sf-board-port/references/schema.md). Các file này tự chứa nội dung cần dùng, không bắt máy mới đi tìm project/session trên máy gốc.
 
 ## Kiểm tra và xuất file
@@ -73,7 +75,7 @@ python3 skills/sf-board-port/scripts/project.py "/path/to/Title.project" --expor
 
 `--export` chỉ chạy khi JSON qua kiểm tra, tạo `PROMPT_VIDEO.txt`, `BANGTRA.tsv`, `REF/prompts.json` và từng `<ID>.prompt.txt`. Export cũ bị thay có backup trong `.snapshots/`. Không xóa ảnh, không reset picked/status và không sửa prompt trong board. Không tự sửa usedBy: Codex phải sửa bản JSON chính rồi kiểm tra lại.
 
-Bộ kiểm tra bắt lỗi schema, ID/ref/dependency/usedBy, VO ↔ text, single-line, shot numbering, khoảng lặng, giây kỹ thuật, chỉ dẫn nhớ clip trước và ledger continuity. **Không chứng minh** diễn xuất, độ điện ảnh, coverage ngữ nghĩa hoặc video tạo ra đã đúng; các phần đó cần đọc đối chiếu hoặc xem video thật.
+Bộ kiểm tra bắt lỗi schema, ID/ref/dependency/usedBy, VO ↔ text, single-line, shot numbering, khoảng lặng, giây kỹ thuật, chỉ dẫn nhớ clip trước và đối chiếu trạng thái đầu/cuối trong ledger. Sau đó Codex đọc header, hành động, pose/set và kết clip để bắt mô tả trạng thái mâu thuẫn. **Không chứng minh** diễn xuất, độ điện ảnh, coverage ngữ nghĩa hoặc video tạo ra đã đúng; các phần đó cần đọc đối chiếu hoặc xem video thật.
 
 ## Cập nhật
 

@@ -32,6 +32,16 @@ Phản ứng đã nằm trong góc cận câu đáp; phần lấy hồ sơ đã 
 
 Với project đang chạy hoặc đã được duyệt, bám phạm vi sửa người dùng yêu cầu. Nếu chỉ sửa tối thiểu, giữ thoại/cấu trúc và chỉnh đúng chỗ mâu thuẫn; ghi nhận phần cần siết khi dựng, không tự tái chia cả phim.
 
+### Rà chuỗi theo cả hai phía
+
+Sau khi chia cảnh và sau khi viết prompt, đọc liền chuỗi theo hành động và lời thoại, tạm gạt phần header lặp ra khỏi việc đánh giá nhịp:
+
+- **Tìm chỗ vụn:** một câu xác nhận, phản ứng tức thời, bước đi tới cửa hoặc thao tác trả đồ có thể làm đuôi của trao đổi đang diễn. Đặt chúng vào coverage của chuỗi đó khi vẫn diễn rõ; gộp lại các shot trùng chức năng thay vì nối nguyên hai prompt. Mở clip mới khi có tiến triển hoặc nhu cầu thực hiện đáng kể.
+- **Tìm chỗ dồn:** đọc thử lời với đúng cảm xúc, kể cả nghe, do dự và đổi ý; hình dung diễn viên thực hiện các động tác quan trọng trong khung. Nếu cảnh chỉ vừa khi thúc thoại, giấu bàn giao hoặc nén nhiều pha khống chế vào một shot, tách ở kết quả hành động hoặc điểm chuyển trọn nghĩa. Một mạch nhân quả có thể trải qua nhiều clip: chẳng hạn hồi tưởng và nghe băng cần thời gian diễn trước phần bàn giao, xác nhận và rời đi. Cân cả chuỗi lời và việc phải diễn, thay vì chỉ dùng lý do “cùng một ý” để gom hết.
+- **Đánh giá clip ít thoại bằng việc nó làm:** nhận ra người thân, xử lý vật chứng hoặc kết ra khơi có thể cần khoảng yên riêng. Một lượt đi bộ thường ngày có thể nằm trong shot mở cảnh đến. Giữ sự im lặng có tác động đến câu chuyện; điều chỉnh coverage lặp không tạo tác động.
+
+Kiểm tra các điểm cắt trong [ví dụ chuỗi có thoại, hành động và vật chứng](worked-sequence.md). Mục tiêu là chuỗi diễn được và nối tự nhiên, không phải chép số clip của ví dụ hoặc so tổng clip với một phim khác. Với bản sửa tối thiểu, chỉ áp dụng việc gộp/tách khi người dùng đã yêu cầu sửa pacing; các lỗi trạng thái vẫn sửa ngay trong cấu trúc đang có.
+
 ## 2. Giữ handles, dựng nhịp liền
 
 - Giữ trạng thái mở/kết rõ ràng và khoảng lặng đầu/cuối để edit; cuối clip `lips closed, hold`. Thời lượng clip nằm ở metadata.

@@ -27,3 +27,15 @@ A fresh agent read only an isolated copy of the skill package and a new shoe-rep
 A second fresh application still split the same short scene for editorial convenience, despite understanding the grouping guidance. The bundled example itself was therefore consolidated into one continuous clip, preserving its dialogue and prompting syntax. Its ledger/usedBy and the boundary regression fixture were updated accordingly.
 
 With the revised package, a third fresh agent read only the isolated skill and planned the entire shoe-repair exchange in one clip with exact dialogue, completed shoe placement/slide/pickup, motivated speaker/reaction coverage and quiet handles. It reported no missing dependencies. This last check tested textual coverage planning; it did not render video or create another import artifact. The consolidated bundled JSON separately passes validation, and all 13 automated checks pass.
+
+## Sequence and within-clip state review
+
+A read-only comparison of two real ports reproduced the gap this revision addresses: a structurally valid project retained old positions in its header/set after a prop pickup, and called a restrained person free in its ending. Matching ledger entries did not expose these contradictions. The comparison also showed both unnecessary small clip boundaries and useful extra action coverage; reducing total clip count would not resolve both problems.
+
+The revision adds a self-contained synthetic railway-storehouse source, coverage choices and state transitions. It teaches a sequence pass for fragmentation and overload, plus a whole-prompt state pass through header, action, subsequent poses/set and ending/next opening. Existing slash-tag/VO format, edit handles, ref rules and validator code are unchanged.
+
+Five fresh agents then applied an isolated copy of the package to a different synthetic flooded-depot source and two existing prompt excerpts. All found the stale frame/set and restraint/set contradictions; one left the frame's unscoped header placement unchanged. The header check was clarified to include every conflicting occurrence while preserving the valid opening state and dialogue.
+
+Five further fresh agents read only the final isolated package and raw task. All identified the conflicting header as well as both stale set descriptions, proposed local replacements, propagated the corrected ending into the next opening, and preserved the valid pre-restraint state. Their sequence plans kept the physical recovery, emotional recognition/playback and custody/departure readable as connected groups, with quiet handles and no separate clip just for confirmation or walking out. No run required private examples, external sessions, network or media generation.
+
+This tests textual planning and minimal state repairs on the supplied cases. It does not prove generated acting or pacing, or that every unseen long port will make the same editorial decisions. The existing automated suite and bundled import example are checked separately.
