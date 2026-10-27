@@ -6,12 +6,10 @@ Skill tự chứa schema, ví dụ giả lập và script kiểm tra; máy khác
 
 ## Cài trên máy khác
 
-Cần **Python 3.10+**. Cách dùng Terminal cần thêm Git và GitHub CLI (`gh`). Repo riêng tư: đăng nhập tài khoản có quyền đọc repo.
+Cần **Python 3.10+** và Git nếu cài bằng Terminal. Repo công khai; có thể clone/cài mà không đăng nhập GitHub.
 
 ```sh
-gh auth login
-gh auth setup-git
-gh repo clone Ductoii/sf-board-port-skill
+git clone https://github.com/Ductoii/sf-board-port-skill.git
 cd sf-board-port-skill
 python3 install.py
 ```
@@ -24,13 +22,13 @@ python3 install.py --dest ~/.codex/skills
 
 Chỉ cài vào **một** nơi để tránh hiện skill trùng. Codex nhận skill mới tự động; nếu chưa xuất hiện thì khởi động lại. Vị trí `~/.agents/skills` và cách nhận skill được đối chiếu với [tài liệu Codex chính thức](https://learn.chatgpt.com/docs/build-skills).
 
-Hoặc dán vào Codex trên máy đã có quyền GitHub:
+Hoặc dán trực tiếp vào Codex:
 
 ```text
 $skill-installer cài skill từ https://github.com/Ductoii/sf-board-port-skill/tree/main/skills/sf-board-port
 ```
 
-Nếu installer không đọc được repo private, dùng cách `gh repo clone` ở trên để cấp quyền Git qua tài khoản của bạn; không ghi token vào skill hay file README.
+Nếu máy không có `$skill-installer`, dùng cách `git clone` và `python3 install.py` ở trên.
 
 ## Gọi skill
 
