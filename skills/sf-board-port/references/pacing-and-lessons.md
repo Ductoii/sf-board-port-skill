@@ -1,6 +1,6 @@
 # Pacing thực hành và bài học từ các project đã port
 
-Đọc khi chia clip cho port mới hoặc rà nhịp phim. Mục tiêu là **nhịp gọn, cuốn và rõ diễn biến**: đối đáp liền mạch, hành động có kết quả, cú lật có sức nặng. Giữ cách prompting người dùng đã chọn. Lấy nhịp 83 (con ngựa) và các project trước người dùng đã chọn làm chuẩn hiện tại; giữ cách kể, coverage và prompting quen thuộc, chỉ chỉnh tối thiểu theo cảnh.
+Đọc khi chia clip cho port mới hoặc rà nhịp phim. Mục tiêu là **nhịp gọn, cuốn và rõ diễn biến**: đối đáp liền mạch, hành động có kết quả, cú lật có sức nặng. Cách làm mặc định được mô tả đầy đủ ngay trong skill: mở trạng thái rõ, cận đúng người nói, phản ứng lắng nghe có ý nghĩa, insert hành động quyết định và kết trạng thái để edit. Dùng cấu trúc prompt ở `prompting.md` và JSON ví dụ đi kèm; khi sửa project có sẵn thì giữ cách prompting đang dùng.
 
 ## 1. Tạo nhịp từ diễn biến
 
@@ -39,12 +39,13 @@ Với project đang chạy hoặc đã được duyệt, bám phạm vi sửa ng
 - Shot mở giúp model hiểu hiện trạng của clip độc lập. Dùng vị trí và prop hiện tại, tránh thêm một lượt quét phòng hoặc tái diễn hành động vừa xong.
 - Phân biệt nguồn gen với bản dựng: nhịp phim cuối được đánh giá ở cách các beat nối nhau sau khi chọn và trim take.
 
-## 3. Học cách kể từ các project trước
+## 3. Coverage và acting áp dụng trực tiếp
 
-- **83/169:** dùng chi tiết và phản ứng để khán giả theo được hành động, nhận ra thay đổi. Chọn những chi tiết có ích cho cảnh mới, không bê nguyên nhịp coverage của phim khác.
-- **Millionaire:** trao đổi ngắn, đối đầu rõ, phản đòn đi sát lời khiêu khích. Kế thừa sự trực tiếp ấy; viết trạng thái độc lập của clip mới thay cho các câu cũ dựa vào “previous clip” hoặc đóng băng cả phòng.
-- **Furious:** cảnh nhiều thông tin cần đi theo chuỗi bằng chứng → nhận ra → phản ứng → quyết định. Giữ mạch giữa các đoạn; để phần kết hạ nhiệt sau khi xung đột được giải quyết, tránh nhắc lại kết luận đã rõ.
-- **Kinh nghiệm chung:** mỗi phim có mức tải thoại và hành động riêng. Lấy chức năng kể chuyện, cách đặt camera và bài học sửa lỗi làm nền để thiết kế nhịp cho chính kịch bản đang port.
+- **Cảnh đối thoại có hành động:** đặt máy để đọc được vị trí và vật đang dùng; theo hành động bằng medium/insert gọn, trở lại gương mặt khi nhân vật nhận ra điều gì. Chi tiết và phản ứng phải nối được nguyên nhân với kết quả.
+- **Cảnh đối đầu:** cận người nói để đọc ý định; cận hoặc OTS người nghe để thấy tác động. Cho nhân vật nghe hết điều cần nghe trước khi đáp, giữ sự ngập ngừng hoặc nhịp lấy hơi khi nó thuộc tâm lý của cảnh. Lời phản đòn đến đúng lúc, không bị ngắt bởi một lượt tái giới thiệu địa điểm.
+- **Chuỗi nhiều bằng chứng:** cho thấy chứng cứ → nhân vật hiểu ra → phản ứng → quyết định. Mỗi chi tiết mới đẩy tình huống đi tiếp; hạ nhiệt khi xung đột đã được giải quyết.
+- **Diễn xuất trong shot:** dùng ánh mắt hướng về đối phương/vật chứng, một nhịp tiếp nhận, do dự hoặc thay đổi cách đáp cụ thể theo nhân vật. Phản ứng có thể diễn ngay trong góc của câu đáp. Đừng thêm một lần nhìn, thở hay im lặng như thủ tục ở mọi lượt thoại.
+- **Nhịp nền:** xen medium định vị, cận người nói, cận phản ứng và insert đúng chỗ; giữ trục hội thoại và khoảng nhìn. Để máy tĩnh cho diễn xuất khi hợp cảnh; chuyển động máy theo bước đi, sự hé lộ hoặc quyết định. Dùng chính các mẫu cú pháp trong `prompting.md`, không cần tìm một phim mẫu khác.
 
 ### Camera theo chức năng của beat
 
@@ -61,7 +62,7 @@ Giữ trục hội thoại, foreground OTS không lộ thêm mặt, cửa và v�
 
 ## 4. Kinh nghiệm lỗi chữ: sửa đúng nơi, không đại tu
 
-Bảng này tổng hợp báo cáo audit 83 và đối chiếu prompt Furious trước đó; không tuyên bố vừa xem lại toàn bộ video các phim.
+Dùng các tình huống và cách sửa ngay dưới đây để đối chiếu prompt đang làm. Các ví dụ đã tự chứa vấn đề cần nhận diện và cách sửa; không cần mở project hoặc session gốc.
 
 | Mẫu lỗi từng gặp | Áp dụng cho port mới / sửa tối thiểu |
 |---|---|

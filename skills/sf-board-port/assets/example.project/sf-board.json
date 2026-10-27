@@ -16,8 +16,7 @@
           "notes": "Prompt-only synthetic example. No generated image.",
           "usedBy": [
             "THUMB1",
-            "V-001",
-            "V-002"
+            "V-001"
           ],
           "refs": {
             "chars": [],
@@ -34,8 +33,7 @@
           "notes": "Prompt-only synthetic example. No generated image.",
           "usedBy": [
             "THUMB1",
-            "V-001",
-            "V-002"
+            "V-001"
           ],
           "refs": {
             "chars": [],
@@ -52,8 +50,7 @@
           "notes": "Prompt-only synthetic example. No generated image.",
           "usedBy": [
             "THUMB1",
-            "V-001",
-            "V-002"
+            "V-001"
           ],
           "refs": {
             "chars": [],
@@ -69,8 +66,7 @@
           "status": "draft",
           "notes": "Prompt-only synthetic example. No generated image.",
           "usedBy": [
-            "V-001",
-            "V-002"
+            "V-001"
           ],
           "refs": {
             "chars": [],
@@ -109,27 +105,13 @@
           "dur": 30,
           "vstatus": "",
           "ai_request": "",
-          "notes": "Seedance · S01 · REF (4): BG1a, CHAR1a, CHAR2a, AL1a · 4 shot",
-          "text": "MAYA: Here is the record.",
-          "prompt": "Scene 001: REF BG1a, CHAR1a, CHAR2a, AL1a: /filmlook: /softbox: photorealistic 35mm film quality, ARRI ALEXA aesthetic, authentic Kodak color science, visible 35mm film grain, soft highlight halation, transform all referenced subjects into real live-action humans with raw unretouched matte skin micro-texture, visible skin pores, fine peach fuzz, subtle natural skin imperfections and physical fabric weave, warm window light, 30fps, widescreen 16:9 frame, clear dialogue up front, no background music score, only soft natural ambience, every spoken line is in natural English, each referenced character appears once only in the live scene, every background extra is a different stranger in muted clothes, reference-sheet panels and captions never appear in the live-action frame, BG1a = the one location for every live-action shot: a small records office with one wooden desk between two chairs and a window at rear, CHAR1a = Maya, a brown-skinned woman of 30 in a blue cotton shirt and grey trousers, hair in a low bun, neutral expression, realistic unretouched matte skin with visible pores, physical fabric weave, must match exactly, CHAR2a = Elias, a fair-skinned man of 45 in a brown wool jacket and cream shirt, short dark hair and clean-shaven face, realistic unretouched matte skin with visible pores, physical fabric weave, must match exactly, AL1a = one dark navy leather binder with a brass clasp | shot 1: /midpoint: static 40mm medium shot, CHAR1a standing left holding closed AL1a in both hands; CHAR2a standing right with empty hands, lips closed | shot 2: /closecrop: static three-quarter 75mm close-up on the single CHAR1a, holding closed AL1a, VO: \"Here is the record.\" lips in sync, others keep lips still | shot 3: /dropdetail: close shot of CHAR1a offering AL1a; CHAR2a grips it with both hands, CHAR1a releases completely and withdraws empty hands | shot 4: /midpoint: static 40mm medium shot, CHAR1a standing left, empty hands; CHAR2a standing right holding closed AL1a in both hands, lips closed, hold",
+          "notes": "Seedance · S01 · REF (4): BG1a, CHAR1a, CHAR2a, AL1a · 6 shot",
+          "text": "MAYA: Here is the record.\nELIAS: Thank you. I can read it now.",
+          "prompt": "Scene 001: REF BG1a, CHAR1a, CHAR2a, AL1a: /filmlook: /softbox: photorealistic 35mm film quality, ARRI ALEXA aesthetic, authentic Kodak color science, visible 35mm film grain, soft highlight halation, transform all referenced subjects into real live-action humans with raw unretouched matte skin micro-texture, visible skin pores, fine peach fuzz, subtle natural skin imperfections and physical fabric weave, warm window light, 30fps, widescreen 16:9 frame, clear dialogue up front, no background music score, only soft natural ambience, every spoken line is in natural English, each referenced character appears once only in the live scene, every background extra is a different stranger in muted clothes, reference-sheet panels and captions never appear in the live-action frame, BG1a = the one location for every live-action shot: a small records office with one wooden desk between two chairs and a window at rear, CHAR1a = Maya, a brown-skinned woman of 30 in a blue cotton shirt and grey trousers, hair in a low bun, neutral expression, realistic unretouched matte skin with visible pores, physical fabric weave, must match exactly, CHAR2a = Elias, a fair-skinned man of 45 in a brown wool jacket and cream shirt, short dark hair and clean-shaven face, realistic unretouched matte skin with visible pores, physical fabric weave, must match exactly, AL1a = one dark navy leather binder with a brass clasp | shot 1: /midpoint: static 40mm medium shot, CHAR1a standing left holding closed AL1a in both hands; CHAR2a standing right with empty hands, lips closed | shot 2: /closecrop: static three-quarter 75mm close-up on the single CHAR1a, holding closed AL1a, VO: \"Here is the record.\" lips in sync, others keep lips still | shot 3: /dropdetail: close shot of CHAR1a offering AL1a; CHAR2a grips it with both hands, CHAR1a releases completely and withdraws empty hands | shot 4: /closecrop: static slightly low-angle 50mm close-up on the single CHAR2a, holding AL1a in both hands, VO: \"Thank you. I can read it now.\" lips in sync, others keep lips still | shot 5: /dropdetail: close shot of CHAR2a setting AL1a on the desk and releasing it, both hands withdrawing empty | shot 6: /midpoint: static 40mm medium shot, CHAR1a standing left, empty hands; CHAR2a standing right, empty hands; closed AL1a rests on the desk, lips closed, hold",
           "music": null,
           "id": "V-001",
-          "label": "001 — Here is the record.",
-          "goc": "4 shot",
-          "vpicked": ""
-        },
-        {
-          "sf": "BG1a",
-          "dur": 30,
-          "vstatus": "",
-          "ai_request": "",
-          "notes": "Seedance · S01 · REF (4): BG1a, CHAR1a, CHAR2a, AL1a · 4 shot",
-          "text": "ELIAS: Thank you. I can read it now.",
-          "prompt": "Scene 002: REF BG1a, CHAR1a, CHAR2a, AL1a: /filmlook: /softbox: photorealistic 35mm film quality, ARRI ALEXA aesthetic, authentic Kodak color science, visible 35mm film grain, soft highlight halation, transform all referenced subjects into real live-action humans with raw unretouched matte skin micro-texture, visible skin pores, fine peach fuzz, subtle natural skin imperfections and physical fabric weave, warm window light, 30fps, widescreen 16:9 frame, clear dialogue up front, no background music score, only soft natural ambience, every spoken line is in natural English, each referenced character appears once only in the live scene, every background extra is a different stranger in muted clothes, reference-sheet panels and captions never appear in the live-action frame, BG1a = the one location for every live-action shot: a small records office with one wooden desk between two chairs and a window at rear, CHAR1a = Maya, a brown-skinned woman of 30 in a blue cotton shirt and grey trousers, hair in a low bun, neutral expression, realistic unretouched matte skin with visible pores, physical fabric weave, must match exactly, CHAR2a = Elias, a fair-skinned man of 45 in a brown wool jacket and cream shirt, short dark hair and clean-shaven face, realistic unretouched matte skin with visible pores, physical fabric weave, must match exactly, AL1a = one dark navy leather binder with a brass clasp | shot 1: /midpoint: static 40mm medium shot, CHAR1a standing left, empty hands; CHAR2a standing right holding closed AL1a in both hands, lips closed | shot 2: /closecrop: static slightly low-angle 50mm close-up on the single CHAR2a, holding AL1a in both hands, VO: \"Thank you. I can read it now.\" lips in sync, others keep lips still | shot 3: /dropdetail: close shot of CHAR2a setting AL1a on the desk and releasing it, both hands withdrawing empty | shot 4: /midpoint: static 40mm medium shot, CHAR1a standing left, empty hands; CHAR2a standing right, empty hands; closed AL1a rests on the desk, lips closed, hold",
-          "music": null,
-          "id": "V-002",
-          "label": "002 — Thank you. I can read it now.",
-          "goc": "4 shot",
+          "label": "001 — The record changes hands",
+          "goc": "6 shot",
           "vpicked": ""
         }
       ],

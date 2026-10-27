@@ -2,7 +2,7 @@
 
 Port kịch bản thành thư mục **`.project` có `sf-board.json` đúng cấu trúc SF Board**, giữ cách prompting Seedance single-line, có ref CHAR/BG/AL, thumbnail prompt, pacing và continuity. Mặc định **chỉ viết prompt, không tạo ảnh/video**.
 
-Skill tự chứa schema, ví dụ giả lập và script kiểm tra; máy khác không cần kịch bản Furious/169/83/Millionaire hay lịch sử chat trên máy gốc. Các project đó là kinh nghiệm hình thành workflow, không được upload kèm repo.
+Skill tự chứa schema, mẫu prompt đầy đủ, hướng dẫn pacing/acting/coverage, ví dụ giả lập và script kiểm tra. Máy khác chỉ cần skill này cùng kịch bản đầu vào. Tên Furious/169/83/Millionaire chỉ nói về nguồn gốc kinh nghiệm; chúng không phải dependency và không có bước yêu cầu tìm/mở các project hay lịch sử chat trên máy gốc.
 
 ## Cài trên máy khác
 

@@ -31,7 +31,7 @@ class ProjectTests(unittest.TestCase):
         self.assertTrue(any('VO dialogue differs' in e for e in self.errors()))
     def test_quoted_dialogue_is_not_a_timing_instruction(self):
         s = self.board['scenes'][1]['shots'][0]
-        s['text'] = 'MAYA: You have 30 seconds to say "yes".'
+        s['text'] = s['text'].replace('MAYA: Here is the record.', 'MAYA: You have 30 seconds to say "yes".')
         s['prompt'] = s['prompt'].replace('"Here is the record."', json.dumps('You have 30 seconds to say "yes".'))
         self.assertEqual(self.errors(), [])
     def test_technical_timing_is_detected(self):
@@ -55,9 +55,21 @@ class ProjectTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp:
             d = pathlib.Path(temp)
             ledger = json.loads((SKILL / 'assets/example.project/CONTINUITY-MAP.json').read_text(encoding='utf-8'))
-            ledger[1]['opening']['right'] = 'Elias empty hands'
+            second = copy.deepcopy(ledger[0])
+            second['id'] = 'V-002'
+            second['opening'] = copy.deepcopy(ledger[0]['ending'])
+            second['opening']['right'] = 'Elias holding the binder'
+            ledger.append(second)
+            board = copy.deepcopy(self.board)
+            next_clip = copy.deepcopy(board['scenes'][1]['shots'][0])
+            next_clip['id'] = 'V-002'
+            next_clip['prompt'] = next_clip['prompt'].replace('Scene 001:', 'Scene 002:', 1)
+            board['scenes'][1]['shots'].append(next_clip)
+            for ref in board['scenes'][0]['sfs']:
+                if 'V-001' in ref['usedBy']:
+                    ref['usedBy'].append('V-002')
             (d / 'CONTINUITY-MAP.json').write_text(json.dumps(ledger))
-            self.assertTrue(any('state mismatch' in e for e in project.validate(self.board, d)[0]))
+            self.assertTrue(any('state mismatch' in e for e in project.validate(board, d)[0]))
     def test_export_roundtrip_and_changed_export_backup(self):
         with tempfile.TemporaryDirectory() as temp:
             d = pathlib.Path(temp)

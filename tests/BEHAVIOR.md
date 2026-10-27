@@ -17,3 +17,13 @@ Independent application covered beat grouping, economical action coverage, offsc
 The pacing guide now teaches directly through dramatic progression, connected exchanges, concise action coverage and motivated reactions/camera choices. Statistical comparisons and numerical pacing-policy discussions were removed at the user's request. No private source screenplay, transcript or production media was added to the repository.
 
 A brisk-pacing check initially split a short records exchange into separate source clips for the reveal and response. The guide was revised to keep connected dialogue/action/immediate response together and use shot changes within that exchange. On a different radio-repair scenario, the agent then kept the complete short sequence together with economical action coverage, the reaction in the reply, a completed handoff and quiet edit handles.
+
+## Standalone portability check
+
+Runtime instructions were audited for references to the author's projects and sessions. Two instructions that told a new port to match project 83/prior projects were replaced with direct guidance for acting, coverage and pacing. New ports use the bundled full prompt, schema, references and synthetic example; current-task exemplars are optional.
+
+A fresh agent read only an isolated copy of the skill package and a new shoe-repair scene. It created and exported a structurally valid project without external projects, sessions, network or media generation. The first run nevertheless copied the example's two-clip split onto a short connected exchange and implied an opening prop placement instead of showing it. The entrypoint was clarified: example boundaries illustrate data structure, while connected short exchanges and simple prop actions belong within one clip using shot changes.
+
+A second fresh application still split the same short scene for editorial convenience, despite understanding the grouping guidance. The bundled example itself was therefore consolidated into one continuous clip, preserving its dialogue and prompting syntax. Its ledger/usedBy and the boundary regression fixture were updated accordingly.
+
+With the revised package, a third fresh agent read only the isolated skill and planned the entire shoe-repair exchange in one clip with exact dialogue, completed shoe placement/slide/pickup, motivated speaker/reaction coverage and quiet handles. It reported no missing dependencies. This last check tested textual coverage planning; it did not render video or create another import artifact. The consolidated bundled JSON separately passes validation, and all 13 automated checks pass.
