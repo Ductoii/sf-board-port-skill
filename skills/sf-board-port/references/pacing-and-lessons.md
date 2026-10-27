@@ -1,6 +1,6 @@
 # Pacing thực hành và bài học từ các project đã port
 
-Đọc khi chia clip cho port mới hoặc rà nhịp phim. Mục tiêu là **nhịp gọn, cuốn và rõ diễn biến**: đối đáp liền mạch, hành động có kết quả, cú lật có sức nặng. Giữ cách prompting người dùng đã chọn.
+Đọc khi chia clip cho port mới hoặc rà nhịp phim. Mục tiêu là **nhịp gọn, cuốn và rõ diễn biến**: đối đáp liền mạch, hành động có kết quả, cú lật có sức nặng. Giữ cách prompting người dùng đã chọn. Lấy nhịp 83 (con ngựa) và các project trước người dùng đã chọn làm chuẩn hiện tại; giữ cách kể, coverage và prompting quen thuộc, chỉ chỉnh tối thiểu theo cảnh.
 
 ## 1. Tạo nhịp từ diễn biến
 
@@ -8,7 +8,7 @@
 2. **Gom đối đáp đang cùng một ý và phản ứng tức thời.** Câu hỏi nối sát câu trả lời, lời thách thức nối với phản đòn. Cú tiết lộ hoặc quyết định trước hết là lý do đổi góc/diễn xuất ngay trong clip đang có; khi cần chia clip mới, chọn điểm cắt trọn nghĩa.
 3. **Gom các thao tác nhỏ liên tiếp.** Mở hộp và lấy hồ sơ có thể nằm trong cùng coverage; dùng insert ở trang giấy quan trọng, chữ ký có ý nghĩa hoặc lúc đổi người cầm. Lược bớt việc mô tả từng ngón tay và động tác phụ.
 4. **Cân nhịp thoại với diễn xuất và hành động.** Một cuộc tranh luận cần lời qua lại tự nhiên; cảnh trao chứng cứ cần thấy vật được nhận. Khi đoạn quá dày, tìm điểm chuyển trọn nghĩa để chia và giữ mạch ở hai phía.
-5. **Cho khoảng lặng một chức năng:** tiếp nhận sự thật, cân nhắc lựa chọn hoặc thay đổi cách nhìn đối phương. Sau khi tác động đã rõ, đi tiếp diễn biến. Reaction dùng để cho thấy thay đổi, không để kéo dài một ý đã hiểu.
+5. **Giữ nhịp thở và acting:** cho nhân vật thời gian nghe, thở, ngập ngừng, tiếp nhận sự thật và đổi quyết định theo tâm lý của cảnh. Câu đáp có thể đến ngay hoặc chậm một nhịp khi diễn xuất cần; giữ ánh mắt, khoảng lặng và phản ứng có ý nghĩa. Nhịp gọn vẫn phải để khán giả cảm được nhân vật, không thúc thoại hay cắt mất cảm xúc.
 6. **Đọc liền cả chuỗi:** thông tin mới có xuất hiện đều, câu đáp có đến đúng lúc, hành động có dẫn tới hậu quả, cao trào có tiến lên thay vì được giải thích lại? Siết chỗ lặp trước khi thêm góc máy hay chia clip.
 
 Mỗi shot nên làm được một việc rõ: cho biết vị trí, nói một điều, hé một vật, hoàn tất hành động hoặc bộc lộ thay đổi trong người nghe. Chọn coverage gọn đủ kể chuyện, tránh chia vụn các thao tác thường ngày thành nhiều clip.
