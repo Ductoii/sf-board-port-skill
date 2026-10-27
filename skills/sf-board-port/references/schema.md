@@ -54,7 +54,7 @@ Clip:
 - `sf` is the actual location BG card, also the first REF in the prompt header.
 - Sequence clips `V-001..V-NNN` and prompt prefixes `Scene 001..NNN` across production scenes.
 - `dur` is numeric seconds. Use 30 by default; never put production timing instructions in the prompt. Diegetic dialogue such as “You have thirty seconds” is dialogue and remains intact.
-- `text` is one `ROLE: exact spoken words` line per turn, in the same order as `VO: "..."` strings in the prompt. Escape quotes with JSON rules. Silent clips use empty text and no VO.
+- `text` is one `ROLE: exact spoken words` line per turn, in the same order as `VO: "..."` strings in the prompt. Escape quotes with JSON rules. Silent clips use empty text and no VO. For offscreen speech, keep the caller/narrator role from the source (or a stable CALLER label if unnamed), not the visible listener; clarify offscreen delivery in the shot body.
 - REF headers list only attached cards, normally BG, CHAR by number/variant, then AL/KU. THUMB cards are not video inputs.
 - New prompt-only cards use `status="draft"`, `picked=""`; video `vpicked=""`. For existing real selections, preserve their files/fields. Selected REF assets normally resolve to `assets/<ID>.png` and `versions/<picked>`; video choices follow the existing project's conventions.
 - Notes' REF count/list, `sfs[].usedBy`, and exported lists must agree with the prompt header. Gaps in AL numbering after removing obsolete cards are harmless; avoid renumbering working refs.
@@ -72,3 +72,5 @@ Include source events/lines when practical. Within a continuous scene, the next 
 ## Scripts
 
 `python3 scripts/project.py Title.project` checks only; `--export` also writes derived exports, backing up changed existing export files under `.snapshots/`. The helper does not rewrite prompts, set usedBy automatically, generate media, or repair story continuity. Fix the authoritative JSON yourself, then rerun. Review errors before publishing; warnings flag missing editorial ledgers or picked-media mismatches without guessing the application's media-selection semantics.
+
+The helper report’s `camera` field counts `/followshot:` and `/pushin:` tags only; it is not a complete motion/framing audit. Inspect shot bodies for pan/tilt, meaningful static compositions and the actual reason for each move.

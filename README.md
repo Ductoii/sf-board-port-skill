@@ -56,6 +56,12 @@ Các nguyên tắc chính:
 - THUMB là khoảnh khắc kể chuyện, không poster; text hậu kỳ ghi ở notes.
 - Không tự tạo media, ghi đè media người dùng đã chọn hoặc can thiệp hàng chờ/tool đang chạy.
 
+## Hướng dẫn pacing và kinh nghiệm thực tế
+
+Đọc [pacing-and-lessons.md](skills/sf-board-port/references/pacing-and-lessons.md): quy trình gộp/tách beat, tải thoại so với thao tác, handles khi dựng, số liệu tham khảo 83/169/Millionaire/Furious, chọn góc máy theo chức năng và các lỗi copy-paste đã gặp. **Không có mặc định 65 từ/clip**, không ép mọi phim về 72 clip và không biến số liệu một phim thành định mức phim sau.
+
+Hướng dẫn chi tiết còn lại: [cấu trúc prompt/CHAR/BG](skills/sf-board-port/references/prompting.md), [prop/AL/continuity](skills/sf-board-port/references/continuity.md), [thumbnail tình huống](skills/sf-board-port/references/thumbnails.md), [schema/đóng gói](skills/sf-board-port/references/schema.md). Các file này tự chứa nội dung cần dùng, không bắt máy mới đi tìm project/session trên máy gốc.
+
 ## Kiểm tra và xuất file
 
 Chạy trong repo clone; đường dẫn project do Codex tạo trên máy đích:

@@ -12,11 +12,27 @@ Retain the nominated projects' exact header, tag spelling, separators and voice 
 
 - First and last shots: explicit present positions/postures/props, quiet closed lips; last `lips closed, hold`. No technical second counts. These handles are intentional editing room; do not remove them to claim faster pacing.
 - Middle shots: a close shot of the one speaker per turn, `VO: "..." lips in sync, others keep lips still`. Separate consequential hand actions into readable inserts; do not hide a six-step prop exchange behind a reaction close-up.
+- If the source explicitly has an offscreen phone caller or narrator, keep that voice offscreen: show the visible listener with closed lips, identify the offscreen speaker, and do not put `lips in sync` on the listener. Match the turn in `shots[].text`; do not spawn the caller in the room. If a clip contains another spoken language explicitly required by the source, scope the header language rule accordingly rather than silently translating it or contradicting it with “every line in English”.
 - An over-the-shoulder shot keeps the foreground listener's face hidden and respects the established dialogue axis. Reaction shots show a different narrative response, not interchangeable filler.
 - Ground visible writing on the actual paper/phone/sign. Phone screens face the person; use an over-the-shoulder insert for readable screen information. Archival evidence plays only within the physical display, without spawning its people in the live room.
 - The header must agree with state changes. A character wearing WITHOUT an apron after removal cannot also have a header definition locking the apron on. A glass filled during the scene is not perpetually described as empty.
 
+## Offscreen speech — snippet versus complete clip
+
+For a requested **single shot**, return only its `shot N: ...` body and corresponding role line; do not invent a shortened Scene/header and present it as an importable full clip. A complete video still needs the full standard header plus quiet first/last shots.
+
+Use the source's actual speaker label when known (for example RENATA), otherwise a stable label such as CALLER. Do not replace the caller label with the listener's name. A middle-shot example, where CHAR1a is the visible listener and the caller has no visible body:
+
+```text
+text turn: CALLER: Please check page four.
+shot 3: /closecrop: static 50mm close-up on CHAR1a standing at the left, her right hand holding a black phone against her ear; the OFFSCREEN CALLER is heard through the phone, VO: "Please check page four." offscreen voice only; CHAR1a listens with lips closed and does not answer, the caller is not visible in the room
+```
+
+The visible CHAR1a and current BG must already be defined/attached in the full clip. Do not attach an unused visible character image just to represent this phone voice. Check the clip's global English/on-screen-character wording does not contradict a specified offscreen or other-language turn.
+
 ## Pacing and camera
+
+For the practical split/merge procedure, examples and lessons from the prior projects, read [pacing-and-lessons.md](pacing-and-lessons.md). There is no built-in default/target/cap of 65 dialogue words per clip.
 
 Reference 83/Millionaire-style projects for the **prompt language and editorial rhythm**, not a fixed target clip count. Preserve the important story turns and causal links; aim for a faithful usable film rather than exhaustive prop choreography. Different dialogue volumes legitimately yield different clip counts. Generated clip count × dur is available source material, not the final edit's runtime.
 
