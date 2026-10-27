@@ -1,0 +1,38 @@
+---
+name: sf-board-port
+description: Use when porting a screenplay into SF Board sf-board.json/.project, or reviewing its Seedance video prompts, reference prompts, pacing, thumbnails, and prop continuity.
+---
+
+# SF Board Port
+
+Port the user's story into a usable SF Board project. Default to **prompts only**; generating reference images, thumbnails, or videos requires a request for those media. Answer briefly in the user's language.
+
+## Start with the right contract
+
+Read [schema.md](references/schema.md) and [prompting.md](references/prompting.md). The bundled [example](assets/example.project/sf-board.json) supplies the actual import shape: `scenes[0].sfs` is the REF library; production clips live in `scenes[].shots`. A `.project` is a **directory**, not a metadata file. Do not invent `asset_library`, `reference_prompts`, or a top-level `videos` schema.
+
+Use the user's existing project as the authority for a revision. Inspect its latest saved contents and preserve picked media, statuses, unknown fields, and manual edits. Snapshot before changing it. For a new port, use user-nominated exemplars if accessible; otherwise the bundled schema and examples suffice. Do not require paths, previous chats, or applications from the author's machine.
+
+## Port
+
+1. Read the complete source. Identify story turns, dialogue, locations, costumes, recurring distinctive objects, and the title's thumbnail situation. Keep a source copy. Resolve only consequential contradictions; preserve dialogue unless rewriting is requested.
+2. Split by dramatic/action beats. Default `dur=30` in metadata unless the user specifies otherwise. Choose clip count from dialogue and physical actions, **not** from another film's clip count or the full generated duration. Quiet opening/ending handles are editing buffers, not slow final-film pacing.
+3. Draft CHAR/BG reference prompts using the layouts in [prompting.md](references/prompting.md). Costume variants link directly to the base CHAR. Keep neutral expressions and empty hands in character sheets.
+4. Use the AL decision rule in [continuity.md](references/continuity.md): frequency alone does not justify a ref. Simple cups/napkins/plates stay short plain-text descriptions; distinctive designs and plot-bearing evidence merit AL. A handwritten clue is different from an ordinary napkin. Handle minor prop changes in video text, not extra character variants.
+5. Write single-line video prompts with the exact slash-tag/shot format. Make each clip self-contained. Preserve the existing format on revisions. Track openings/endings in a small continuity ledger and check actual prompt text against it.
+6. Plan cinematic framing and motivated movement per [prompting.md](references/prompting.md). Keep restrained static coverage dominant; do not claim rich camera movement merely because prompts say ARRI or 35mm.
+7. If thumbnail prompts are requested, place THUMB cards in REF using [thumbnails.md](references/thumbnails.md). Make a readable story moment, not a poster. Prompt-only delivery includes no generated image or fake `picked` value.
+
+## Package and verify
+
+Create `<title>.project/sf-board.json` in the requested SF Board folder; infer a sensible local output directory if unspecified. Preserve source, supply a concise source-to-clip/continuity map, and finish the files yourself.
+
+Run through the interpreter, from this skill folder:
+
+```sh
+python3 scripts/project.py /absolute/path/Title.project --export
+```
+
+This checks structural integrity and writes derived REF/prompt/table exports. It cannot prove story coverage, acting, visual continuity, or rendered-video quality. Manually review those textual decisions; if asked to audit actual generated video, watch it directly when playback is available and state any limitation. Do not invent a cause for a random generation failure.
+
+Deliver the project link, clip/REF counts, meaningful minimal fixes, and honest validation scope. Never generate assets, mutate an application's private storage, or operate a render queue just to complete a prompt port.

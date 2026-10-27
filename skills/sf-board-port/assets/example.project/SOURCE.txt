@@ -1,0 +1,6 @@
+Synthetic example, written for this skill.
+
+Maya stands left in a records office. Elias stands right. Maya offers him a closed navy binder, he grips it, and she releases it.
+MAYA: Here is the record.
+ELIAS: Thank you. I can read it now.
+Elias sets the binder on the desk and releases it.

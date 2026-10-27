@@ -1,0 +1,4 @@
+interface:
+  display_name: "SF Board Port"
+  short_description: "Port scripts to cinematic SF Board projects"
+  default_prompt: "Use $sf-board-port to port this screenplay into a prompt-only SF Board .project, preserving its dialogue and prompting style."

@@ -1,0 +1,43 @@
+[
+  {
+    "id": "V-001",
+    "scene": "S01",
+    "source_scene": 1,
+    "dur": 30,
+    "refs": [
+      "BG1a",
+      "CHAR1a",
+      "CHAR2a",
+      "AL1a"
+    ],
+    "opening": {
+      "left": "Maya standing left holding the closed binder with both hands",
+      "right": "Elias standing right, empty hands"
+    },
+    "ending": {
+      "left": "Maya standing left, empty hands",
+      "right": "Elias standing right holding the closed binder with both hands"
+    }
+  },
+  {
+    "id": "V-002",
+    "scene": "S01",
+    "source_scene": 1,
+    "dur": 30,
+    "refs": [
+      "BG1a",
+      "CHAR1a",
+      "CHAR2a",
+      "AL1a"
+    ],
+    "opening": {
+      "left": "Maya standing left, empty hands",
+      "right": "Elias standing right holding the closed binder with both hands"
+    },
+    "ending": {
+      "left": "Maya standing left, empty hands",
+      "right": "Elias standing right, empty hands",
+      "prop": "Closed binder on the desk"
+    }
+  }
+]

@@ -1,0 +1,139 @@
+{
+  "film": "The Record — synthetic SF Board example",
+  "updated_at": "2026-10-27 00:00:00",
+  "kind": "phim",
+  "scenes": [
+    {
+      "id": "REF",
+      "name": "REF — Characters, location, object, thumbnail",
+      "sfs": [
+        {
+          "id": "CHAR1a",
+          "label": "CHAR1a — Maya — work clothes",
+          "desc": "Maya — work clothes",
+          "prompt": "Create ONE photorealistic landscape 16:9 character turnaround reference sheet on a seamless pure-white studio background. FOUR vertical panels in one horizontal row, separated by thin light-grey dividers. Left to right: FACE CLOSE-UP, FRONT, BACK, SIDE. The FACE CLOSE-UP occupies 30 percent of the sheet with a sharp front-facing head-and-shoulders portrait. The other panels divide the remaining space equally, showing full-body front, back and left-facing side profile, head to soles with aligned feet and clear margins. Put each exact label in its white footer. All views show the same person, face, hair, body and outfit. Neutral relaxed expression, arms at sides, empty hands. Soft even studio light, realistic unretouched skin pores, visible fabric weave, believable anatomy and original fictional face. CHARACTER AND OUTFIT: Maya, a brown-skinned woman of 30, hair in a low bun, blue cotton shirt, grey trousers, black flat shoes.",
+          "status": "draft",
+          "notes": "Prompt-only synthetic example. No generated image.",
+          "usedBy": [
+            "THUMB1",
+            "V-001",
+            "V-002"
+          ],
+          "refs": {
+            "chars": [],
+            "bg": null
+          },
+          "picked": ""
+        },
+        {
+          "id": "CHAR2a",
+          "label": "CHAR2a — Elias — visitor",
+          "desc": "Elias — visitor",
+          "prompt": "Create ONE photorealistic landscape 16:9 character turnaround reference sheet on a seamless pure-white studio background. FOUR vertical panels in one horizontal row, separated by thin light-grey dividers. Left to right: FACE CLOSE-UP, FRONT, BACK, SIDE. The FACE CLOSE-UP occupies 30 percent of the sheet with a sharp front-facing head-and-shoulders portrait. The other panels divide the remaining space equally, showing full-body front, back and left-facing side profile, head to soles with aligned feet and clear margins. Put each exact label in its white footer. All views show the same person, face, hair, body and outfit. Neutral relaxed expression, arms at sides, empty hands. Soft even studio light, realistic unretouched skin pores, visible fabric weave, believable anatomy and original fictional face. CHARACTER AND OUTFIT: Elias, a fair-skinned man of 45, short dark hair, clean-shaven face, brown wool jacket, cream shirt, charcoal trousers, brown shoes.",
+          "status": "draft",
+          "notes": "Prompt-only synthetic example. No generated image.",
+          "usedBy": [
+            "THUMB1",
+            "V-001",
+            "V-002"
+          ],
+          "refs": {
+            "chars": [],
+            "bg": null
+          },
+          "picked": ""
+        },
+        {
+          "id": "BG1a",
+          "label": "BG1a — Records office — afternoon",
+          "desc": "Records office — afternoon",
+          "prompt": "A single photorealistic landscape 16:9 location reference sheet in a 2x2 grid of four equal panels, thin white dividers. All show the same small records office: one wooden desk between two chairs, a rear window and a door at right, warm afternoon window light, real worn wood and painted plaster. Main front view, left view, right view and a desk/window detail preserve identical architecture and furniture. Empty environment with no people, portraits, captions or panel numbers, realistic materials, 35mm photography.",
+          "status": "draft",
+          "notes": "Prompt-only synthetic example. No generated image.",
+          "usedBy": [
+            "THUMB1",
+            "V-001",
+            "V-002"
+          ],
+          "refs": {
+            "chars": [],
+            "bg": null
+          },
+          "picked": ""
+        },
+        {
+          "id": "AL1a",
+          "label": "AL1a — Navy binder with brass clasp",
+          "desc": "Navy binder with brass clasp",
+          "prompt": "Create ONE photorealistic landscape 16:9 prop reference photograph of one closed dark navy leather binder with a brass clasp, squared cream page edges and a small rectangular embossed spine panel. Neutral seamless background, soft studio light, clear material texture, no people, hands, logos or watermark.",
+          "status": "draft",
+          "notes": "Prompt-only synthetic example. No generated image.",
+          "usedBy": [
+            "V-001",
+            "V-002"
+          ],
+          "refs": {
+            "chars": [],
+            "bg": null
+          },
+          "picked": ""
+        },
+        {
+          "id": "THUMB1",
+          "label": "THUMB1 — The record changes hands",
+          "desc": "The record changes hands",
+          "prompt": "Create ONE photorealistic landscape 16:9 professional photograph of a real event in BG1a, not a poster. Medium-wide three-quarter 35mm view in warm window light, readable natural faces. LEFT foreground CHAR1a offers closed dark navy AL1a to CHAR2a on the RIGHT, whose hands are reaching to receive it, attentive surprised face; Maya is calm and purposeful. One wooden desk between them, rear window visible. Natural body proportions and skin pores, clear fabric texture. No collage, lineup, text overlays, arrows, icons or watermark.",
+          "status": "draft",
+          "notes": "Prompt-only synthetic example. No generated image.",
+          "usedBy": [],
+          "refs": {
+            "chars": [
+              "CHAR1a",
+              "CHAR2a"
+            ],
+            "bg": "BG1a"
+          },
+          "picked": ""
+        }
+      ],
+      "shots": [],
+      "script": "Prompt-only example; no media selected."
+    },
+    {
+      "id": "S01",
+      "name": "S01 — Records office — afternoon",
+      "sfs": [],
+      "shots": [
+        {
+          "sf": "BG1a",
+          "dur": 30,
+          "vstatus": "",
+          "ai_request": "",
+          "notes": "Seedance · S01 · REF (4): BG1a, CHAR1a, CHAR2a, AL1a · 4 shot",
+          "text": "MAYA: Here is the record.",
+          "prompt": "Scene 001: REF BG1a, CHAR1a, CHAR2a, AL1a: /filmlook: /softbox: photorealistic 35mm film quality, ARRI ALEXA aesthetic, authentic Kodak color science, visible 35mm film grain, soft highlight halation, transform all referenced subjects into real live-action humans with raw unretouched matte skin micro-texture, visible skin pores, fine peach fuzz, subtle natural skin imperfections and physical fabric weave, warm window light, 30fps, widescreen 16:9 frame, clear dialogue up front, no background music score, only soft natural ambience, every spoken line is in natural English, each referenced character appears once only in the live scene, every background extra is a different stranger in muted clothes, reference-sheet panels and captions never appear in the live-action frame, BG1a = the one location for every live-action shot: a small records office with one wooden desk between two chairs and a window at rear, CHAR1a = Maya, a brown-skinned woman of 30 in a blue cotton shirt and grey trousers, hair in a low bun, neutral expression, realistic unretouched matte skin with visible pores, physical fabric weave, must match exactly, CHAR2a = Elias, a fair-skinned man of 45 in a brown wool jacket and cream shirt, short dark hair and clean-shaven face, realistic unretouched matte skin with visible pores, physical fabric weave, must match exactly, AL1a = one dark navy leather binder with a brass clasp | shot 1: /midpoint: static 40mm medium shot, CHAR1a standing left holding closed AL1a in both hands; CHAR2a standing right with empty hands, lips closed | shot 2: /closecrop: static three-quarter 75mm close-up on the single CHAR1a, holding closed AL1a, VO: \"Here is the record.\" lips in sync, others keep lips still | shot 3: /dropdetail: close shot of CHAR1a offering AL1a; CHAR2a grips it with both hands, CHAR1a releases completely and withdraws empty hands | shot 4: /midpoint: static 40mm medium shot, CHAR1a standing left, empty hands; CHAR2a standing right holding closed AL1a in both hands, lips closed, hold",
+          "music": null,
+          "id": "V-001",
+          "label": "001 — Here is the record.",
+          "goc": "4 shot",
+          "vpicked": ""
+        },
+        {
+          "sf": "BG1a",
+          "dur": 30,
+          "vstatus": "",
+          "ai_request": "",
+          "notes": "Seedance · S01 · REF (4): BG1a, CHAR1a, CHAR2a, AL1a · 4 shot",
+          "text": "ELIAS: Thank you. I can read it now.",
+          "prompt": "Scene 002: REF BG1a, CHAR1a, CHAR2a, AL1a: /filmlook: /softbox: photorealistic 35mm film quality, ARRI ALEXA aesthetic, authentic Kodak color science, visible 35mm film grain, soft highlight halation, transform all referenced subjects into real live-action humans with raw unretouched matte skin micro-texture, visible skin pores, fine peach fuzz, subtle natural skin imperfections and physical fabric weave, warm window light, 30fps, widescreen 16:9 frame, clear dialogue up front, no background music score, only soft natural ambience, every spoken line is in natural English, each referenced character appears once only in the live scene, every background extra is a different stranger in muted clothes, reference-sheet panels and captions never appear in the live-action frame, BG1a = the one location for every live-action shot: a small records office with one wooden desk between two chairs and a window at rear, CHAR1a = Maya, a brown-skinned woman of 30 in a blue cotton shirt and grey trousers, hair in a low bun, neutral expression, realistic unretouched matte skin with visible pores, physical fabric weave, must match exactly, CHAR2a = Elias, a fair-skinned man of 45 in a brown wool jacket and cream shirt, short dark hair and clean-shaven face, realistic unretouched matte skin with visible pores, physical fabric weave, must match exactly, AL1a = one dark navy leather binder with a brass clasp | shot 1: /midpoint: static 40mm medium shot, CHAR1a standing left, empty hands; CHAR2a standing right holding closed AL1a in both hands, lips closed | shot 2: /closecrop: static slightly low-angle 50mm close-up on the single CHAR2a, holding AL1a in both hands, VO: \"Thank you. I can read it now.\" lips in sync, others keep lips still | shot 3: /dropdetail: close shot of CHAR2a setting AL1a on the desk and releasing it, both hands withdrawing empty | shot 4: /midpoint: static 40mm medium shot, CHAR1a standing left, empty hands; CHAR2a standing right, empty hands; closed AL1a rests on the desk, lips closed, hold",
+          "music": null,
+          "id": "V-002",
+          "label": "002 — Thank you. I can read it now.",
+          "goc": "4 shot",
+          "vpicked": ""
+        }
+      ],
+      "script": "Maya hands a navy binder to Elias.\nMAYA: Here is the record.\nELIAS: Thank you. I can read it now.\nElias sets it on the desk."
+    }
+  ]
+}
