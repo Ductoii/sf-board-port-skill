@@ -32,16 +32,13 @@ The visible CHAR1a and current BG must already be defined/attached in the full c
 
 ## Pacing and camera
 
-For the practical split/merge procedure, examples and lessons from the prior projects, read [pacing-and-lessons.md](pacing-and-lessons.md). There is no built-in default/target/cap of 65 dialogue words per clip.
+Read [pacing-and-lessons.md](pacing-and-lessons.md) for practical beat grouping and lessons from previous ports. Build a clear, engaging flow: connected exchanges move naturally, action remains readable, and revelations get a meaningful response. Keep the important story turns and causal links in the user's prompting style.
 
-Reference 83/Millionaire-style projects for the **prompt language and editorial rhythm**, not a fixed target clip count. Preserve the important story turns and causal links; aim for a faithful usable film rather than exhaustive prop choreography. Different dialogue volumes legitimately yield different clip counts. Generated clip count × dur is available source material, not the final edit's runtime.
-
-Compose the beat before choosing a move:
-
-- Establish geography at scene changes. Use a meaningful mix of medium, three-quarter, over-the-shoulder, low angle, off-centre negative space, tight reaction, and hand/evidence inserts. 32–40mm suits space; 50–85mm suits dialogue/detail.
-- Static coverage is dominant. A rough 80/20 static/moving preference is guidance, not a quota; do not add arbitrary camera motion to satisfy it. Track/follow when an actor actually crosses space; a restrained push-in serves a turn or decision, at most one per clip. A gentle pan/tilt is justified when it reveals new information and stays in the existing tag syntax.
-- Distinguish editing handles from dramatic pauses. Avoid multiplying clips for tiny gestures; split when speaking load or meaningful actions exceed what one source clip can perform.
-- Audit actual camera words in the shot bodies. If most are static and only a handful move, report that honestly; naming ARRI/35mm/film grain does not establish cinematic direction or finished quality.
+- Establish geography when a location changes. Then stay with the unfolding exchange, using medium, three-quarter, over-the-shoulder, low angle, off-centre negative space, reaction and hand/evidence inserts where they contribute. 32–40mm suits space; 50–85mm suits dialogue/detail.
+- Give each camera choice a dramatic job. Track an actor crossing space, pan to a new piece of information, or use a restrained push-in when a decision changes the scene. Static compositions let performance carry the moment. Keep moves clear and physically motivated.
+- Keep replies close to their questions and consequences close to their causes within the ongoing clip. A short reveal, its immediate reaction and the reply can be told through successive shot choices. Group connected small actions into readable coverage and let a speaker close-up carry the reaction when possible; cover routine handling economically.
+- Preserve quiet source handles for editing. The edit can trim these buffers while retaining the meaningful pause or response. Judge pacing across the sequence: progression, impact and a clean move into the next beat.
+- Review shot bodies for actual camera direction and narrative function. Remove duplicated explanations, repeated entrances and interchangeable reaction filler; preserve the requested source dialogue and structure when revising an existing port.
 
 Local templates avoid: `everyone holding still`, `the whole room frozen`, `no plastic`, `black face patches`, `subsurface scattering`, `3D wireframe`, `skin sheen`, `jib-arm crane`, `30-degree orbital arc`. Use concrete positive descriptions of real skin/fabric and simple camera placement. These are workflow conventions, not proven universal claims about a model's internals.
 

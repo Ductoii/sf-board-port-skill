@@ -48,17 +48,17 @@ Giữ nguyên cấu trúc prompt, clip, thoại và khoảng lặng mở/kết. 
 Các nguyên tắc chính:
 
 - `.project` là folder; ref ở `scenes[0].sfs`, clip ở `scenes[].shots`.
-- 30s nằm ở `dur`, không nhét giây kỹ thuật vào prompt; clip count theo beat và tải thoại, không ép mọi phim còn 60–70 video.
+- 30s nằm ở `dur`; chia clip theo diễn biến, giữ đối đáp liền mạch và gộp hành động nhỏ thành coverage gọn.
 - Giữ khoảng lặng đầu/cuối để edit. Mỗi clip tự mô tả trạng thái, không dùng “giống video trước”.
 - CHAR sheet ngang bốn cột, cận mặt 30%; BG bốn góc trống người; costume variant bám CHAR gốc.
 - Khăn/ly/đĩa phổ thông mô tả ngắn. AL dành cho thiết kế khó giữ đồng nhất hoặc bằng chứng có nội dung quan trọng; xuất hiện ≥4 video không tự động đủ điều kiện tạo AL.
-- Góc máy có chủ đích, chủ yếu tĩnh; tracking/push-in phục vụ hành động/cao trào. Không dùng nhãn “cinematic” thay cho thiết kế shot.
+- Góc máy có chủ đích; khung tĩnh, tracking/pan/push-in phục vụ diễn xuất, hành động và cú chuyển của cảnh.
 - THUMB là khoảnh khắc kể chuyện, không poster; text hậu kỳ ghi ở notes.
 - Không tự tạo media, ghi đè media người dùng đã chọn hoặc can thiệp hàng chờ/tool đang chạy.
 
 ## Hướng dẫn pacing và kinh nghiệm thực tế
 
-Đọc [pacing-and-lessons.md](skills/sf-board-port/references/pacing-and-lessons.md): quy trình gộp/tách beat, tải thoại so với thao tác, handles khi dựng, số liệu tham khảo 83/169/Millionaire/Furious, chọn góc máy theo chức năng và các lỗi copy-paste đã gặp. **Không có mặc định 65 từ/clip**, không ép mọi phim về 72 clip và không biến số liệu một phim thành định mức phim sau.
+Đọc [pacing-and-lessons.md](skills/sf-board-port/references/pacing-and-lessons.md): tạo nhịp gọn và cuốn từ diễn biến, giữ đối đáp liền mạch, gộp thao tác phụ, đặt phản ứng đúng chỗ, dùng handles khi dựng và chọn camera theo chức năng. Bài học từ 83/169/Millionaire/Furious được chuyển thành cách làm và ví dụ thực tế.
 
 Hướng dẫn chi tiết còn lại: [cấu trúc prompt/CHAR/BG](skills/sf-board-port/references/prompting.md), [prop/AL/continuity](skills/sf-board-port/references/continuity.md), [thumbnail tình huống](skills/sf-board-port/references/thumbnails.md), [schema/đóng gói](skills/sf-board-port/references/schema.md). Các file này tự chứa nội dung cần dùng, không bắt máy mới đi tìm project/session trên máy gốc.
 
